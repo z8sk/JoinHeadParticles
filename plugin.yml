@@ -1,0 +1,6 @@
+name: JoinHeadParticles
+api: 4.0.0
+version: 0.0.1
+main: Zloki\JoinHeadParticles\Main
+author: Zloki
+description: When joining the server, use this advanced plugin to add some particles.

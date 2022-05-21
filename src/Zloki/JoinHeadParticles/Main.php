@@ -19,12 +19,8 @@ class Main extends PluginBase implements Listener
     public function join(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         
-        $player->getWorld()->addParticle($player->getPosition()->add(0, 1, 0), new HeartParticle());
-
-        $player->getWorld()->addParticle($player->getPosition()->add(0, 1, 0), new HeartParticle());
-
-        $player->getWorld()->addParticle($player->getPosition()->add(0, 1, 0), new HeartParticle());
-
-        $player->getWorld()->addParticle($player->getPosition()->add(0, 1, 0), new HeartParticle());
+        for ($i = 0; $i < 7; $i++){
+            $player->getWorld()->addParticle($player->getPosition()->add(0, 1, 0), new HeartParticle());
+        }
     }
 }
